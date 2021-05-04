@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_M6caMOYgEea_5s66BhrFPw" name="RootElement">
+  <packagedElement xmi:type="uml:Actor" xmi:id="_OyaocOYgEea_5s66BhrFPw" name="Customer"/>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_P-JbwOYgEea_5s66BhrFPw" name="WarehouseEmployee"/>
+  <packagedElement xmi:type="uml:Package" xmi:id="_7ddwgOYgEea_5s66BhrFPw" name="OrderOnStock">
+    <packagedElement xmi:type="uml:UseCase" xmi:id="__TVO0OYgEea_5s66BhrFPw" name="OrderOp">
+      <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_xDHZAOcGEeaYT8msDZUypA" name="ExtensionPoint1"/>
+      <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_9Gd2IOcGEeaYT8msDZUypA" name="ExtensionPoint2"/>
+      <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_GR_KgOcHEeaYT8msDZUypA" name="ExtensionPoint3"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_RwMLsOYhEea_5s66BhrFPw" name="CustomerAuthentication"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_sXmFEOcGEeaYT8msDZUypA" name="OrderProduct">
+      <extend xmi:type="uml:Extend" xmi:id="_xC0eEOcGEeaYT8msDZUypA" extendedCase="__TVO0OYgEea_5s66BhrFPw" extensionLocation="_xDHZAOcGEeaYT8msDZUypA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_y06t0OcGEeaYT8msDZUypA" name="ViewOrders">
+      <extend xmi:type="uml:Extend" xmi:id="_9GcoAOcGEeaYT8msDZUypA" extendedCase="__TVO0OYgEea_5s66BhrFPw" extensionLocation="_9Gd2IOcGEeaYT8msDZUypA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="__yjB4OcGEeaYT8msDZUypA" name="CancelOrder">
+      <extend xmi:type="uml:Extend" xmi:id="_GR-jcOcHEeaYT8msDZUypA" extendedCase="__TVO0OYgEea_5s66BhrFPw" extensionLocation="_GR_KgOcHEeaYT8msDZUypA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_WrnEUOcHEeaYT8msDZUypA" name="UpdateStock"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_oEKEgOcHEeaYT8msDZUypA" name="InvoiceOrder"/>
+    <packagedElement xmi:type="uml:Usage" xmi:id="_SS2CYOcJEeaYT8msDZUypA" client="__TVO0OYgEea_5s66BhrFPw" supplier="_RwMLsOYhEea_5s66BhrFPw"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_3ofZQPgXEeajXIC5pyHQlA" name="RegisterCustomer"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_4J-uAOcGEeaYT8msDZUypA" memberEnd="_4KHQ4OcGEeaYT8msDZUypA _4KH38OcGEeaYT8msDZUypA">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_4KGCwOcGEeaYT8msDZUypA" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_4KGCwecGEeaYT8msDZUypA" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_4KHQ4OcGEeaYT8msDZUypA" name="orderop" type="__TVO0OYgEea_5s66BhrFPw" association="_4J-uAOcGEeaYT8msDZUypA"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_4KH38OcGEeaYT8msDZUypA" name="customer" type="_OyaocOYgEea_5s66BhrFPw" association="_4J-uAOcGEeaYT8msDZUypA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_5hhvwOcGEeaYT8msDZUypA" memberEnd="_5hiW0ucGEeaYT8msDZUypA _5hi94OcGEeaYT8msDZUypA">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_5hiW0OcGEeaYT8msDZUypA" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_5hiW0ecGEeaYT8msDZUypA" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_5hiW0ucGEeaYT8msDZUypA" name="customerauthentication" type="_RwMLsOYhEea_5s66BhrFPw" association="_5hhvwOcGEeaYT8msDZUypA"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_5hi94OcGEeaYT8msDZUypA" name="customer" type="_OyaocOYgEea_5s66BhrFPw" association="_5hhvwOcGEeaYT8msDZUypA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_hz61gOcHEeaYT8msDZUypA" memberEnd="_hz8DoecHEeaYT8msDZUypA _hz8DoucHEeaYT8msDZUypA">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_hz7ckOcHEeaYT8msDZUypA" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_hz8DoOcHEeaYT8msDZUypA" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_hz8DoecHEeaYT8msDZUypA" name="updatestock" type="_WrnEUOcHEeaYT8msDZUypA" association="_hz61gOcHEeaYT8msDZUypA"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_hz8DoucHEeaYT8msDZUypA" name="warehouseemployee" type="_P-JbwOYgEea_5s66BhrFPw" association="_hz61gOcHEeaYT8msDZUypA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_tEXPAOcHEeaYT8msDZUypA" memberEnd="_tEX2EucHEeaYT8msDZUypA _tEX2E-cHEeaYT8msDZUypA">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_tEX2EOcHEeaYT8msDZUypA" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_tEX2EecHEeaYT8msDZUypA" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_tEX2EucHEeaYT8msDZUypA" name="invoiceorder" type="_oEKEgOcHEeaYT8msDZUypA" association="_tEXPAOcHEeaYT8msDZUypA"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_tEX2E-cHEeaYT8msDZUypA" name="warehouseemployee" type="_P-JbwOYgEea_5s66BhrFPw" association="_tEXPAOcHEeaYT8msDZUypA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_Jp_24PgYEeajXIC5pyHQlA" memberEnd="_Jqe_EfgYEeajXIC5pyHQlA _Jqe_EvgYEeajXIC5pyHQlA">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_JqeYAPgYEeajXIC5pyHQlA" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Jqe_EPgYEeajXIC5pyHQlA" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_Jqe_EfgYEeajXIC5pyHQlA" name="registercustomer" type="_3ofZQPgXEeajXIC5pyHQlA" association="_Jp_24PgYEeajXIC5pyHQlA"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_Jqe_EvgYEeajXIC5pyHQlA" name="customer" type="_OyaocOYgEea_5s66BhrFPw" association="_Jp_24PgYEeajXIC5pyHQlA"/>
+  </packagedElement>
+</uml:Model>
